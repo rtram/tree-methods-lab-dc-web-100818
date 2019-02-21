@@ -7,3 +7,7 @@ function inOrder(currentNode) {
     inOrder(currentNode.right)
   }
 }
+
+function findOrAdd() {
+  
+}
