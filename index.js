@@ -1,12 +1,9 @@
-function inOrder(rootNode) {
-  let currentNode = rootNode
+function inOrder(currentNode) {
   if (currentNode.left) {
-    currentNode = currentNode.left
-    inOrder(currentNode)
-  } else {
+    inOrder(currentNode.left)
+  }
     console.log(currentNode.data)
-    if (currentNode.right) {
-      
-    }
+  if (currentNode.right) {
+    inOrder(currentNode.right)
   }
 }
