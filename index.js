@@ -4,6 +4,9 @@ function inOrder(rootNode) {
     currentNode = currentNode.left
     inOrder(currentNode)
   } else {
-    console.log(currentNode)
+    console.log(currentNode.data)
+    if (currentNode.right) {
+      
+    }
   }
 }
