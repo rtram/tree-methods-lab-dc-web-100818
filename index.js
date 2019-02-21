@@ -33,3 +33,11 @@ function max(node) {
     return node
   }
 }
+
+function max(node) {
+  if (node.left) {
+    return max(node.left)
+  } else {
+    return node
+  }
+}
