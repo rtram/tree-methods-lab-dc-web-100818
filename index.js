@@ -8,18 +8,18 @@ function inOrder(currentNode) {
   }
 }
 
-function findOrAdd(rootNode, newNode) {
-  if (newNode.data < rootNode.data) {
-    if (rootNode.left) {
-      findOrAdd(rootNode.left, newNode)  
+function findOrAdd(currentNode, newNode) {
+  if (newNode.data < currentNode.data) {
+    if (currentNode.left) {
+      findOrAdd(currentNode.left, newNode)  
     } else {
-      rootNode.left = newNode
+      currentNode.left = newNode
     }
-  } else if (newNode.data > rootNode.data) {
-    if (rootNode.right) {
-      findOrAdd(rootNode.right, newNode)  
+  } else if (newNode.data > currentNode.data) {
+    if (currentNode.right) {
+      findOrAdd(currentNode.right, newNode)  
     } else {
-      rootNode.right = newNode
+      currentNode.right = newNode
     } 
   } else {
       return true
