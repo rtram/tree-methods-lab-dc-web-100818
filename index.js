@@ -22,6 +22,7 @@ function findOrAdd(currentNode, newNode) {
       currentNode.right = newNode
     } 
   } else {
+    console.log(currentNode.data, newNode.data)
       return true
     }
 }
