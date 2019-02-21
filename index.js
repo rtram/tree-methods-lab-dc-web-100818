@@ -9,7 +9,6 @@ function inOrder(currentNode) {
 }
 
 function findOrAdd(currentNode, newNode) {
-  console.log('hello')
   if (newNode.data < currentNode.data) {
     if (currentNode.left) {
       return findOrAdd(currentNode.left, newNode)  
