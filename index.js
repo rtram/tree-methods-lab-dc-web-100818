@@ -1,3 +1,3 @@
-function inOrder() {
+function inOrder(rootNode) {
   
 }
